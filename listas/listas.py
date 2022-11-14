@@ -43,3 +43,37 @@ print("\n****** LISTADO PELICULAS ********")
 for movies in peliculas:
     print(f"{peliculas.index(movies)+1}. {movies}")
 
+
+# Listas Multidimensionales -> es una lista que contiene dentro otras listas 
+# Ejemplo lista de contactos
+
+contactos = [
+    [
+        "Antonio",
+        "antonio@antonio.com"
+    ],
+    [
+        "Robert",
+        "robert@robert.com"
+    ],
+    [
+        "kendall",
+        "kendall@kendall.com"
+    ]
+]
+
+for contacto in contactos:
+    for elemento in contacto:
+        if contacto.index(elemento) == 0:
+            print("Nombre: "+ elemento)
+        else:
+            print("Email: "+ elemento)    
+    print("\n")
+
+# print(contactos[1][1])
+
+
+
+
+    
+
